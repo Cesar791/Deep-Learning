@@ -43,7 +43,7 @@ class SharedAdam(optim.Adam):
 		"""Performs a single optimization step.
         Arguments:
             closure (callable, optional): A closure that reevaluates the model
-                and returns the loss.
+               and returns the loss.
         """
 		loss = None
 		if closure is not None:
@@ -83,5 +83,5 @@ class SharedAdam(optim.Adam):
 				step_size = group['lr'] * math.sqrt(bias_correction2) / bias_correction1
 
 				p.data.addcdiv_(-step_size, exp_avg, denom)
-
+				
 		return loss

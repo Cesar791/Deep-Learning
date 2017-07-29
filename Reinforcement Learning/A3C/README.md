@@ -1,7 +1,7 @@
 # A3C
 This code implements the A3C algorithm using PyTorch. Converges after 3 million steps in "PongDeterministic-v4". 
 
-# Usage
+## Usage
 "python A3C.py" to run the code.
 
 ## Reference
